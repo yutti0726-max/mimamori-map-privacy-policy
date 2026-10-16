@@ -1,0 +1,21 @@
+:root{color-scheme:light dark;--bg:#fafcfb;--fg:#1a2321;--muted:#52615d;--line:#c9d6d2;--accent:#00695c;--mark:#fff3b0;--markfg:#3a3000}
+@media (prefers-color-scheme:dark){:root{--bg:#0e1514;--fg:#e2eceb;--muted:#9db0ab;--line:#2c3b38;--accent:#4db6ac;--mark:#5c4a00;--markfg:#fff3b0}}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.7 system-ui,-apple-system,"Segoe UI","Hiragino Sans","Noto Sans CJK JP","Noto Sans CJK SC","Noto Sans CJK TC",sans-serif}
+main,header,footer{max-width:46rem;margin:0 auto;padding:0 16px}
+header{padding-top:16px}
+h1{font-size:1.6rem;line-height:1.3;margin:1.2rem 0 .6rem}
+h2{font-size:1.2rem;margin:2rem 0 .4rem;border-bottom:1px solid var(--line);padding-bottom:.2rem}
+h3{font-size:1.05rem;margin:1.4rem 0 .2rem}
+a{color:var(--accent)}
+nav.lang{font-size:.9rem;color:var(--muted)}
+nav.lang [aria-current]{font-weight:700;color:var(--fg)}
+.table-wrap{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:.92rem}
+th,td{border:1px solid var(--line);padding:6px 8px;vertical-align:top;text-align:left}
+th{background:color-mix(in srgb,var(--line) 35%,transparent)}
+blockquote{margin:1rem 0;padding:.4rem 1rem;border-left:4px solid var(--accent);color:var(--muted)}
+code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.92em}
+mark.todo{background:var(--mark);color:var(--markfg);padding:0 .2em;border-radius:3px}
+.draft{background:var(--mark);color:var(--markfg);padding:8px 12px;border-radius:6px;margin:12px 0;font-size:.92rem}
+ul,ol{padding-left:1.4rem}
+footer{color:var(--muted);font-size:.85rem;padding-bottom:32px;margin-top:2.5rem}
